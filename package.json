@@ -1,0 +1,39 @@
+{
+  "name": "yed-erm-to-txt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run build:node",
+    "build:node": "babel src --out-dir dist --source-maps inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redcatjs/yed-erm-to-txt.git"
+  },
+  "author": "Jo <jo@redcat.ninja> (https://redcat.ninja)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redcatjs/yed-erm-to-txt/issues"
+  },
+  "devDependencies": {
+    "babel-cli": "^7.0.0-beta.3",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-builtin-extend": "^1.1.2",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-runtime": "^7.0.0-beta.3",
+    "babel-preset-env": "^2.0.0-beta.2",
+    "babel-preset-stage-3": "^7.0.0-beta.3",
+    "babel-register": "^7.0.0-beta.3",
+    "babel-runtime": "^7.0.0-beta.3"
+  },
+  "homepage": "https://github.com/redcatjs/yed-erm-to-txt#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "cheerio": "^1.0.0-rc.2",
+    "commander": "^2.15.1",
+    "figlet": "^1.2.0",
+    "underscore": "^1.9.0"
+  }
+}
