@@ -6,7 +6,7 @@ import chalk from 'chalk'
 import figlet from 'figlet'
 
 import {
-  svgFileToTxt,
+  graphmlFileToTxt,
 } from './index'
 
 program
@@ -15,7 +15,7 @@ program
     if(!file_output){
       file_output = file_input+'.txt'
     }
-    const txt = svgFileToTxt(file_input)
+    const txt = graphmlFileToTxt(file_input)
     fs.writeFileSync(file_output, txt)
     console.log('writed to: '+file_output)
   })
@@ -28,7 +28,7 @@ const NO_COMMAND_SPECIFIED = !process.argv.slice(2).length
 if(NO_COMMAND_SPECIFIED){
   console.log(
     chalk.green(
-      figlet.textSync('yEd ERM SVG to TXT', { horizontalLayout: 'full' })
+      figlet.textSync('yEd ERM GraphML to TXT', { horizontalLayout: 'full' })
     )
   )
   program.help();

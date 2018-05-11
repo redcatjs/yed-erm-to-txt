@@ -15,14 +15,14 @@ _.mixin({
 })
 
 
-export function svgFileToTxt(svgFile){
-  const svgContent = fs.readFileSync(svgFile)
-  return svgContentToTxt(svgContent)
+export function graphmlFileToTxt(graphmlFile){
+  const graphmlContent = fs.readFileSync(graphmlFile)
+  return graphmlContentToTxt(graphmlContent)
 }
-export function svgContentToTxt(svgContent){
+export function graphmlContentToTxt(graphmlContent){
   const tables = {}
 
-  const $ = cheerio.load(svgContent, {
+  const $ = cheerio.load(graphmlContent, {
       xmlMode: true,
   })
 
