@@ -3,6 +3,9 @@
   "version": "1.0.2",
   "description": "",
   "main": "dist/index.js",
+  "bin": {
+    "yed-erm-to-txt": "./dist/cli"
+  },
   "scripts": {
     "build": "npm run build:node",
     "build:node": "babel src --out-dir dist --source-maps inline",
